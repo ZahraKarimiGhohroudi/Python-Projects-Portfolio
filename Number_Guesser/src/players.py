@@ -1,13 +1,9 @@
 import os
-import os
 import re
 import hashlib
 import secrets
 
-SRC_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_DIR = os.path.dirname(SRC_DIR)
-PLAYERS_FILE = os.path.join(PROJECT_DIR, "players_info.txt")
-
+PLAYERS_FILE = r'Number_Guesser\data\players_info.txt'
 USERNAME_PATTERN = re.compile(r"^[A-Za-z0-9_]{3,20}$")
 
 def load_players():

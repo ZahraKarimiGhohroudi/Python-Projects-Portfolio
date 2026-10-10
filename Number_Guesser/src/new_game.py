@@ -28,6 +28,7 @@ def start_game(user_id):
         elif level == "3":
             # Hard mode logic
             random_number = random.randint(1, 100000)
+            a,b = 1,100000
             
         elif level == "4":
             print("Okay, We backed to main menu.")

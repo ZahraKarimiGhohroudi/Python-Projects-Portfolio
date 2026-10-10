@@ -1,21 +1,18 @@
 import os
 from datetime import datetime
 
-SRC_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_DIR = os.path.dirname(SRC_DIR)
-RESULTS_FILE = os.path.join(PROJECT_DIR, "results.txt")
-
+RESULTS_FILE = r'Number_Guesser\data\results.txt'
 DIFFICULTY_LEVELS = {
     "1": "Easy",
     "2": "Medium",
     "3": "Hard"
 }
 
-def store_results(id, difficulty, score):
+def store_results(user_id, difficulty, score):
     '''ذخیره نتیحه هر بازی در فایل'''
     date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(RESULTS_FILE, "a") as f:
-        f.write(f"{id},{difficulty},{score},{date}\n")
+    with open(RESULTS_FILE, "a", encoding="utf-8") as f:
+        f.write(f"{user_id},{difficulty},{score},{date}\n")
         
 def load_results(user_id):
     """همه بازی های یک کاربر رو لیست میکنه"""

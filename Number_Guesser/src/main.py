@@ -68,14 +68,23 @@ def main():
     while True:
         print('1: Sign Up')
         print('2: Log In')
-        answer = input("what you want?(1 or 2) ")
+        print('3: Exit')
+        answer = input("what you want?(1, 2 or 3) ")
         
         if answer == "1":
             username = sign_up()
+            if username is None:
+                continue
 
         elif answer == "2":
             username = log_in()
-
+            if username is None:
+                continue
+            
+        elif answer == "3":
+            print('Goodbye')
+            exit()
+            
         else:
             print("Invalid choice. Please try again.")
             continue
