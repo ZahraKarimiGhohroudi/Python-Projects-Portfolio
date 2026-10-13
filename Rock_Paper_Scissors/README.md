@@ -16,10 +16,10 @@
 - Replay loop: play as many rounds as you like
 
 ## Project structure
-Rock_Paper_Scissors/ 
+Rock_Paper_Scissors/   
 ├── data/  
-│   ├── LOGO_game.jpeg
-│   ├── image.jpeg   
+│   ├── LOGO.jpeg  
+│   ├── images.jpeg   
 ├── src/  
 │ └── game.py  
 ├── LICENSE  
