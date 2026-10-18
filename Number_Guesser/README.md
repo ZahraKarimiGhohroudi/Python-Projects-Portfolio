@@ -76,5 +76,5 @@ python main.py
 
 ## 📄 License
 
-This project is licensed under the terms in the [LICENSE](LICENSE) file.
+This project is licensed under the terms in the [LICENSE](../LICENSE) file.
 
