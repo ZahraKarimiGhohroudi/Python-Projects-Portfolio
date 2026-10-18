@@ -33,7 +33,6 @@ class RandomPasswordGenerator(PasswordGenerator):
             length = 8
 
         self.length: int = length
-        self.characters: str = string.ascii_letters
 
         self.groups: list[str] = [string.ascii_lowercase, string.ascii_uppercase]
         if include_numbers:
